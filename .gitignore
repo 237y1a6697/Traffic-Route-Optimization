@@ -1,0 +1,45 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+
+# Environment
+.env
+.env*.local
+
+# Datasets & Large Files
+data/osm/*.pbf
+data/osm/*.osm
+experiments/results/*.csv
+experiments/results/*.json
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

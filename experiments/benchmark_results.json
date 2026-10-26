@@ -1,0 +1,149 @@
+[
+  {
+    "fleet_load": 30,
+    "results": {
+      "DIJKSTRA": {
+        "metrics": {
+          "tstt": 481.0,
+          "avg_travel_time": 16.03,
+          "max_vc": 0.2,
+          "severe_bottlenecks": 0,
+          "co2_kg": 46.2,
+          "delay_mins": 0.0
+        },
+        "runtime_ms": 8.9
+      },
+      "CGA": {
+        "metrics": {
+          "tstt": 482.0,
+          "avg_travel_time": 16.07,
+          "max_vc": 0.2,
+          "severe_bottlenecks": 0,
+          "co2_kg": 46.3,
+          "delay_mins": 0.0
+        },
+        "runtime_ms": 50.9
+      },
+      "QUBO": {
+        "metrics": {
+          "tstt": 482.0,
+          "avg_travel_time": 16.07,
+          "max_vc": 0.2,
+          "severe_bottlenecks": 0,
+          "co2_kg": 46.3,
+          "delay_mins": 0.0
+        },
+        "runtime_ms": 76.0
+      },
+      "QGA": {
+        "metrics": {
+          "tstt": 484.0,
+          "avg_travel_time": 16.13,
+          "max_vc": 0.2,
+          "severe_bottlenecks": 0,
+          "co2_kg": 46.5,
+          "delay_mins": 0.0
+        },
+        "runtime_ms": 87.3
+      }
+    }
+  },
+  {
+    "fleet_load": 75,
+    "results": {
+      "DIJKSTRA": {
+        "metrics": {
+          "tstt": 1230.8,
+          "avg_travel_time": 16.41,
+          "max_vc": 0.45,
+          "severe_bottlenecks": 0,
+          "co2_kg": 118.0,
+          "delay_mins": 1.8
+        },
+        "runtime_ms": 0.1
+      },
+      "CGA": {
+        "metrics": {
+          "tstt": 1276.1,
+          "avg_travel_time": 17.02,
+          "max_vc": 0.45,
+          "severe_bottlenecks": 0,
+          "co2_kg": 122.4,
+          "delay_mins": 1.1
+        },
+        "runtime_ms": 98.3
+      },
+      "QUBO": {
+        "metrics": {
+          "tstt": 1233.5,
+          "avg_travel_time": 16.45,
+          "max_vc": 0.45,
+          "severe_bottlenecks": 0,
+          "co2_kg": 118.3,
+          "delay_mins": 1.5
+        },
+        "runtime_ms": 235.5
+      },
+      "QGA": {
+        "metrics": {
+          "tstt": 1268.2,
+          "avg_travel_time": 16.91,
+          "max_vc": 0.45,
+          "severe_bottlenecks": 0,
+          "co2_kg": 121.7,
+          "delay_mins": 1.2
+        },
+        "runtime_ms": 165.7
+      }
+    }
+  },
+  {
+    "fleet_load": 130,
+    "results": {
+      "DIJKSTRA": {
+        "metrics": {
+          "tstt": 2718.8,
+          "avg_travel_time": 20.91,
+          "max_vc": 2.12,
+          "severe_bottlenecks": 2,
+          "co2_kg": 224.3,
+          "delay_mins": 572.8
+        },
+        "runtime_ms": 0.1
+      },
+      "CGA": {
+        "metrics": {
+          "tstt": 2529.1,
+          "avg_travel_time": 19.45,
+          "max_vc": 2.0,
+          "severe_bottlenecks": 1,
+          "co2_kg": 226.9,
+          "delay_mins": 249.1
+        },
+        "runtime_ms": 126.0
+      },
+      "QUBO": {
+        "metrics": {
+          "tstt": 2447.7,
+          "avg_travel_time": 18.83,
+          "max_vc": 2.0,
+          "severe_bottlenecks": 1,
+          "co2_kg": 218.6,
+          "delay_mins": 255.7
+        },
+        "runtime_ms": 519.1
+      },
+      "QGA": {
+        "metrics": {
+          "tstt": 2524.3,
+          "avg_travel_time": 19.42,
+          "max_vc": 2.0,
+          "severe_bottlenecks": 1,
+          "co2_kg": 226.3,
+          "delay_mins": 251.3
+        },
+        "runtime_ms": 236.0
+      }
+    }
+  }
+]

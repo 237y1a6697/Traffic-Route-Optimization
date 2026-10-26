@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  # React + Vite Frontend
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "5173:5173"
+    environment:
+      - VITE_API_BASE_URL=http://localhost:8000
+    volumes:
+      - ./src:/app/src
+      - ./public:/app/public
+    depends_on:
+      - backend
+
+  # Python / FastAPI Routing & Scientific Engine
+  backend:
+    build:
+      context: ./python_engine
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:password@db:5432/traffic_optimization
+    volumes:
+      - ./python_engine:/app
+      - ./data/osm:/app/data/osm
+    depends_on:
+      - db
+
+  # PostgreSQL / PostGIS Spatial Database
+  db:
+    image: postgis/postgis:16-3.4
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=traffic_optimization
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./database/schema:/docker-entrypoint-initdb.d
+
+volumes:
+  pgdata:
